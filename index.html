@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-
-        <h1 id="title">Pagination</h1>
-        <p id="description">This is a simple pagination example.</p>
-
-        <div class="table-responsive" id="data-container">
-            <table class="table table-bordered" id="table">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- styles file link -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+<body>
+    <h1 id="title">User Details</h1><hr>
+    <p id="description">This pagination data are displaying the Id, Name, email of the user</p>
+    <hr>
+   <div class="table-responsive">
+             <!-- <table class="table table-border"></table>  -->
+   </div>  
+    <!-- changes page number -->
+    <br>
+    <hr>
+    <div font-family: sans-serif;>current page: 
+        <p class="changes"></p>
+    </div>
+    <hr>
+    <div class="button">
+        <button class="firstBtn">First</button>
+        <button class="prevBtn">Previous</button>
+        <button class="btn btn1">1</button>
+        <button class="btn btn2">2</button>
+        <button class="btn btn3">3</button>
+        <button class="btn btn4">4</button>
+        <button class="btn btn5">5</button>
+        <button class="nextBtn">Next</button>
+        <button class="lastBtn">Last</button>
+        <div id="buttons" class="d-flex" type="button"></div>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <tr>
                 <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Title</th>
-                        <th>Body</th>
-                    </tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>email</th>
+                   
                 </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+            </tr>
+            <tbody id="data">
 
-        <div id="pagination-container"></div>
+            </tbody>
 
-        <div id="buttons" class="d-flex justify-content-center">
-            <button class="pagination-button"
-                onclick="goToFirstPage()">First</button>
-            <button class="pagination-button"
-                onclick="goToPreviousPage()">Previous</button>
-            <button class="pagination-button"
-                onclick="goToNextPage()">Next</button>
-            <button class="pagination-button"
-                onclick="goToLastPage()">Last</button>
-        </div>
-        <script src="./script.js"></script>
-        <script
-            src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
-
-    </body>
+        </table>
+    </div>
+    <!-- js file link -->
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
 </html>
